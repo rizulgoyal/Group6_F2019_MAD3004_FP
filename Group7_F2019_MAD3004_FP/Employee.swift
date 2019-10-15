@@ -11,5 +11,9 @@ import Foundation
 class Employee
 {
     
-    
+    var employeeID : Int?
+    var employeeName : String?
+    var employeeAge : Int?
+    var currentYear : Int = 2019
+
 }
