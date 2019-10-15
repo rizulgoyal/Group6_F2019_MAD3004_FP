@@ -26,4 +26,10 @@ class Employee
         self.employeeName=employeeName
         self.employeeAge=employeeAge
     }
+    
+    class func calcEarnings()
+    {
+        
+    }
+    
 }
