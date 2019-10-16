@@ -8,7 +8,7 @@
 
 import Foundation
 
-class PartTime: Employee 
+class PartTime: Employee
 
 {
     
@@ -21,6 +21,8 @@ class PartTime: Employee
         self.rate=rate
         self.hoursworked=hoursworked
     }
+    
+    
     
     
     
