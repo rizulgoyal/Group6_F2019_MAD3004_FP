@@ -13,5 +13,11 @@ class  Car: Vehicle {
     var insuranceCompany :String?
     var insurance :String?
     
+    //protocol method
+    override func printmydata()  {
+           print("The Make is : \(carmaintainceCost!)")
+           print("The plate no is : \(insuranceCompany!)")
+           print("The Vehicle is : \(insurance!)")
     
+}
 }
