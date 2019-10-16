@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Employee : IPrintable
+class Employee : Vehicle, IPrintable
 {
     
     
@@ -17,6 +17,7 @@ class Employee : IPrintable
     var employeeName : String?
     var employeeAge : Int?
     var currentYear : Int = 2019
+    
     
     var birthYear : Int{
         return self.currentYear-employeeAge!
@@ -34,10 +35,16 @@ class Employee : IPrintable
         
     }
     
+    
     func displayData() {
+        
         print("Employee ID : \(self.employeeID!)")
         print("Employee Name : \(self.employeeName!)")
         print("Employee Birth Year : \(birthYear)")
+        
+        
+        
+        
 
     }
     

@@ -11,6 +11,7 @@ import Foundation
 class CommisionBasedPartTime : PartTime
 {
     var commisionPercentage : Int?
+
     
     
     init(employeeID: Int, employeeName: String, employeeAge: Int, rate: Float, hoursworked: Int, commisionPercentage : Int) {
@@ -18,5 +19,10 @@ class CommisionBasedPartTime : PartTime
         self.commisionPercentage=commisionPercentage
     }
     
+
+    override func displayData() {
+        super.displayData()
+        
+    }
   
 }
