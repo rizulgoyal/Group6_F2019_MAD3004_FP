@@ -19,7 +19,7 @@ class Employee : IPrintable
     var currentYear : Int = 2019
     
     var birthYear : Int{
-        return self.employeeAge!-currentYear
+        return self.currentYear-employeeAge!
     }
 
     
