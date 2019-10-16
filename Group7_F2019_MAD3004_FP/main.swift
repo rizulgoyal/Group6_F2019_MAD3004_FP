@@ -19,7 +19,7 @@ var objPart = PartTime(employeeID: 2, employeeName: "Anmol", employeeAge: 23, ra
 
 var objectEmp = Employee(employeeID: 2, employeeName: "Rizul", employeeAge: 25)
 
-Employee.displayData(<#T##Employee#>)
+var obj
 
 //new branch
 

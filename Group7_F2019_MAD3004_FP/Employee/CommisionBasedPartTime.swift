@@ -11,6 +11,11 @@ import Foundation
 class CommisionBasedPartTime : PartTime
 {
     var commisionPercentage : Int?
+    var totalSalary : Float
+    {
+        let basicSalary = Float (hoursworked!) * rate!
+        return basicSalary * Float(commisionPercentage!)/100
+    }
 
     
     
