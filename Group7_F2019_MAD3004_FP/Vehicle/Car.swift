@@ -8,5 +8,10 @@
 
 import Foundation
 class  Car: Vehicle {
+    //Declared Variables
+    var carmaintainceCost :Int?
+    var insuranceCompany :String?
+    var insurance :String?
+    
     
 }
