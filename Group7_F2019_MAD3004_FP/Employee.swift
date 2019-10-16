@@ -8,8 +8,12 @@
 
 import Foundation
 
-class Employee
+class Employee : IPrintable
 {
+    func displayData() {
+        <#code#>
+    }
+    
     
     var employeeID : Int?
     var employeeName : String?
@@ -27,7 +31,7 @@ class Employee
         self.employeeAge=employeeAge
     }
     
-    class func calcEarnings()
+    func calcEarnings()
     {
         
     }
