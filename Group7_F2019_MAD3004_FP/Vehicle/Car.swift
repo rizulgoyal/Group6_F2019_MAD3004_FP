@@ -16,7 +16,7 @@ class  Car: Vehicle {
     //protocol method
     override func printmydata()  {
         super.printmydata()             //Method called of Vehicle Class
-        
+        if 
         
     
 }
