@@ -15,6 +15,7 @@ class PartTime: Employee
     var rate : Float?
     var hoursworked : Int?
     
+    // init function
     init(employeeID: Int, employeeName: String, employeeAge: Int, rate: Float,hoursworked: Int) {
         super.init(employeeID: employeeID, employeeName: employeeName, employeeAge: employeeAge)
         self.rate=rate
