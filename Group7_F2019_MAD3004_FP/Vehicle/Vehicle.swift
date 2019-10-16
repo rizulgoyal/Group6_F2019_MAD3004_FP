@@ -7,13 +7,13 @@
 //
 
 import Foundation
-struct Vehicle {
+class Vehicle {
 
 //declared variables
 
- var make :String
- var plate :String
- var vehicle :BooleanLiteralType
+ var make :String?
+ var plate :String?
+ var vehicle :Bool?
     
     
     //protocol method
