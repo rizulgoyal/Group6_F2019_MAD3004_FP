@@ -13,14 +13,14 @@ class Vehicle {
 
  var make :String?
  var plate :String?
- var vehicle :Bool?
+ var isVehicle :Bool?
     
     
     //protocol method
     func printmydata()  {
-        print("The Make is : \(make)")
-        print("The plate no is : \(plate)")
-        print("The Vehicle is : \(vehicle)")
+        print("The Make is : \(make!)")
+        print("The plate no is : \(plate!)")
+        print("The Vehicle is : \(isVehicle!)")
     }
   
     
