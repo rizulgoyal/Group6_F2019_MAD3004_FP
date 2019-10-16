@@ -18,7 +18,9 @@ struct Vehicle {
     
     //protocol method
     func printmydata()  {
-        
+        print("The Make is : \(make)")
+        print("The plate no is : \(plate)")
+        print("The Vehicle is : \(vehicle)")
     }
   
     
