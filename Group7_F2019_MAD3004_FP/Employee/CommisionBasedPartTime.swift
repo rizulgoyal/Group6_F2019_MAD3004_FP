@@ -8,4 +8,8 @@
 
 import Foundation
 
-
+class CommisionBasedPartTime : PartTime
+{
+    var commisionPercentage : Int?
+    
+}
