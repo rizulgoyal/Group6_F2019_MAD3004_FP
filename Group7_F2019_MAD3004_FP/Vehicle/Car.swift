@@ -15,9 +15,9 @@ class  Car: Vehicle {
     
     //protocol method
     override func printmydata()  {
-           print("The Make is : \(carmaintainceCost!)")
-           print("The plate no is : \(insuranceCompany!)")
-           print("The Vehicle is : \(insurance!)")
+        super.printmydata()
+        
+        
     
 }
 }
