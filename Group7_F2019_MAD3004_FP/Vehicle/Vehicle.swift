@@ -22,4 +22,9 @@ struct Vehicle {
         self.plate = plate
         self.vehicle = vehicle
     }
+    
+    //protocol method
+    func printmydata()  {
+        
+    }
 }
