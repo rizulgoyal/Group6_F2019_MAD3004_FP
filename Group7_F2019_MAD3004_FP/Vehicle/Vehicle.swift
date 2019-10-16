@@ -15,18 +15,11 @@ struct Vehicle {
  var plate :String
  var vehicle :BooleanLiteralType
     
-    //Contructor
-    
-    init (make :String,plate :String, vehicle :BooleanLiteralType) {
-        self.make = make
-        self.plate = plate
-        self.vehicle = vehicle
-    }
     
     //protocol method
     func printmydata()  {
         
     }
-    // test
+  
     
 }
