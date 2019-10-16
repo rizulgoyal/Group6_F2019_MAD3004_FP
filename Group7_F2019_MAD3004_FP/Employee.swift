@@ -10,9 +10,7 @@ import Foundation
 
 class Employee : IPrintable
 {
-    func displayData() {
-        <#code#>
-    }
+    
     
     
     var employeeID : Int?
@@ -34,6 +32,13 @@ class Employee : IPrintable
     func calcEarnings()
     {
         
+    }
+    
+    func displayData() {
+        print("Employee ID : \(self.employeeID!)")
+        print("Employee Name : \(self.employeeName!)")
+        print("Employee Birth Year : \(birthYear)")
+
     }
     
 }
