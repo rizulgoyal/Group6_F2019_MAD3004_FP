@@ -16,7 +16,16 @@ class  Car: Vehicle {
     //protocol method
     override func printmydata()  {
         super.printmydata()             //Method called of Vehicle Class
-        if 
+       if super.isVehicle == true
+        {
+            print("The Make is : \(carmaintainceCost!)")
+            print("The plate no is : \(insuranceCompany!)")
+            print("The Vehicle is : \(insurance!)")
+        }
+        else
+       {
+        
+        }
         
     
 }
