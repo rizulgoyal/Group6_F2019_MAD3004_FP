@@ -9,23 +9,14 @@
 import Foundation
 class  Car: Vehicle {
     //Declared Variables
-    var carmaintainceCost :Int?
-    var insuranceCompany :String?
-    var insurance :String?
+    var model: String?
+    var insurance: Bool?
+
     
     //protocol method
     override func printmydata()  {
         super.printmydata()             //Method called of Vehicle Class
-       if super.isVehicle == true       //if function added to check whether the user have vehicle or not
-        {
-            print("The Make is : \(carmaintainceCost!)")
-            print("The plate no is : \(insuranceCompany!)")
-            print("The Vehicle is : \(insurance!)")
-        }
-        else
-       {
-        
-        }
+       
         
     
 }
