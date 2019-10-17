@@ -7,26 +7,20 @@
 //
 
 import Foundation
-struct Vehicle {
+class Vehicle {
 
 //declared variables
 
- var make :String
- var plate :String
- var vehicle :BooleanLiteralType
+ var make :String?
+ var plate :String?
+ 
     
-    //Contructor
-    
-    init (make :String,plate :String, vehicle :BooleanLiteralType) {
-        self.make = make
-        self.plate = plate
-        self.vehicle = vehicle
-    }
     
     //protocol method
     func printmydata()  {
-        
+        print("The Make is : \(make!)")
+        print("The plate no is : \(plate!)")
     }
-    // test
+  
     
 }

@@ -7,3 +7,18 @@
 //
 
 import Foundation
+class  Car: Vehicle ,IPrintable {
+    
+    
+    //Declared Variables
+    var model: String?
+    var insurance: Bool?
+    
+//    method ovveride
+    func displayData() {
+        super.printmydata()             //Method called of Vehicle Class
+        print("The model is : \(model!)")
+         print("Insurance is \(insurance!)")
+         }
+    }
+    
