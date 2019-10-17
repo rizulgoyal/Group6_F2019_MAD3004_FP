@@ -18,3 +18,19 @@ class car
 
 
 
+
+class  Car: Vehicle {
+    
+    
+    //Declared Variables
+    var model: String?
+    var insurance: Bool?
+    
+//    method ovveride
+     override func displayData() {
+        super.displayData()             //Method called of Vehicle Class
+        print("The model is : \(model!)")
+         print("Insurance is \(insurance!)")
+         }
+    }
+  

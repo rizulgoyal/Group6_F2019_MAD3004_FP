@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Employee : Vehicle, IPrintable
+class Employee : Vehicle
 {
     
     
@@ -36,7 +36,7 @@ class Employee : Vehicle, IPrintable
     }
     
     
-    func displayData() {
+    override func displayData() {
         
         print("Employee ID : \(self.employeeID!)")
         print("Employee Name : \(self.employeeName!)")
