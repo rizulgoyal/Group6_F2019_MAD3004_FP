@@ -8,7 +8,7 @@
 
 import Foundation
 class FullTime: Employee {
-    
+    //variables declarationm
     var salary :Float?
     var bonus :Float?
     var totalsalary :Float
