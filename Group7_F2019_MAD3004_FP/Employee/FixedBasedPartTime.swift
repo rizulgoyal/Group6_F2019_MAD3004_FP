@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+class FixedBasedPartTime: PartTime
+
+{
+    var fixedAmount : Int?
+    
+    
+    override func displayData() {
+        <#code#>
+    }
+    
+}
