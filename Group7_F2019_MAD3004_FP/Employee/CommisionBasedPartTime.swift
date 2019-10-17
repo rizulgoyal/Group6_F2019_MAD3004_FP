@@ -20,10 +20,10 @@ class CommisionBasedPartTime : PartTime
 
     
     
-    init(employeeID: Int, employeeName: String, employeeAge: Int, rate: Float, hoursworked: Int, commisionPercentage : Int) {
-        super.init(employeeID: employeeID, employeeName: employeeName, employeeAge: employeeAge, rate: rate, hoursworked: hoursworked)
-        self.commisionPercentage=commisionPercentage
-    }
+//    init(employeeID: Int, employeeName: String, employeeAge: Int, rate: Float, hoursworked: Int, commisionPercentage : Int) {
+//        super.init(employeeID: employeeID, employeeName: employeeName, employeeAge: employeeAge, rate: rate, hoursworked: hoursworked)
+//        self.commisionPercentage=commisionPercentage
+//    }
     
 
      override func displayData() {

@@ -24,11 +24,11 @@ class Employee : Vehicle
     }
 
     
-    init(employeeID:Int,employeeName:String,employeeAge:Int) {
-        self.employeeID=employeeID
-        self.employeeName=employeeName
-        self.employeeAge=employeeAge
-    }
+//    init(employeeID:Int,employeeName:String,employeeAge:Int) {
+//        self.employeeID=employeeID
+//        self.employeeName=employeeName
+//        self.employeeAge=employeeAge
+//    }
     
     func calcEarnings()
     {
