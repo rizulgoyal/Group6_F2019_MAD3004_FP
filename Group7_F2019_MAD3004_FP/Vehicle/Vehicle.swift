@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Vehicle {
+
 
 class Vehicle : IPrintable  {
 
