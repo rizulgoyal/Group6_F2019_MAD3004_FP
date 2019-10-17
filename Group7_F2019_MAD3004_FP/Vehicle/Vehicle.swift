@@ -7,14 +7,20 @@
 //
 
 import Foundation
+
+class Vehicle {
+=======
 class Vehicle : IPrintable  {
+
 
 //declared variables
 
  var make :String?
  var plate :String?
- 
+
+ var vehicle :Bool?
     
+
     
     //protocol method
      func displayData()  {
