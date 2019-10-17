@@ -7,3 +7,20 @@
 //
 
 import Foundation
+class FullTime: Employee {
+    
+    var salary :Float?
+    var bonus :Float?
+    var totalsalary :Float?
+    {
+        let temp = salary! + bonus!
+        return Float(temp)
+        
+    }
+    
+    //override method
+    override func displayData() {
+        super.displayData()
+    }
+   
+}

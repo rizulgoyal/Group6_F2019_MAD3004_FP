@@ -7,14 +7,14 @@
 //
 
 import Foundation
-class Motorcycle: Vehicle ,IPrintable {
+class Motorcycle: Vehicle {
     //Declared variables
       var model :String?
       var insurance : Bool?
     
     //method Iprintable
-    func displayData() {
-        super.printmydata() //comment added
+       override func displayData() {
+        super.displayData() //comment added
         print("The model is : \(model!)")
         print("Insurance is \(insurance!)")
     }
