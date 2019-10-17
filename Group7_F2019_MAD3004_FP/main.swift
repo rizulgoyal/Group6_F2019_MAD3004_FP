@@ -30,28 +30,68 @@ func readJsonFile(jsonFileName: String)
 
     var empObject = Employee()
     
-   if let jsonDictionay = json as? [String: AnyObject]
+   if let jsonDictionay = json as? [String: Any]
    {
-    for newDict in jsonDictionay
-    {
-        if let empID = newDict.value["id"] as? Int
+    
+//    for (key,value) in jsonDictionay
+//    {
+        if let empID = jsonDictionay["id"] as? Int
        {
            print(empID)
         empObject.employeeID=empID
        }
-        if let empName = newDict.value["name"] as? String
+    if let empName = jsonDictionay["name"] as? String
     {
     print(empName)
         empObject.employeeName=empName
     }
-        if let empAge = newDict.value["age"] as? Int
+    if let empAge = jsonDictionay["age"] as? Int
     {
     print(empAge)
         empObject.employeeAge=empAge
     }
     empObject.displayData()
 }
+//    }
+    
+    var ftime : FullTime
+     ftime = FullTime()
+    
+    if let jsonDictionay = json as? [String: Any]
+       {
+        let emptype = jsonDictionay["type"] as? String
+        if  emptype == "FullTime"
+        {
+            if let empID = jsonDictionay["id"] as? Int
+           {
+            ftime.employeeID=empID
+           }
+        if let empName = jsonDictionay["name"] as? String
+        {
+            ftime.employeeName=empName
+        }
+        if let empAge = jsonDictionay["age"] as? Int
+        {
+            ftime.employeeAge=empAge
+        }
+        if let empSalary = jsonDictionay["salary"] as? Float
+        {
+            ftime.salary=empSalary
+        }
+        if let empbonus = jsonDictionay["bonus"] as? Float
+        {
+            ftime.bonus=empbonus
+        }
+        ftime.displayData()
+        }
+        else
+        {
+            print("it doesnot match the type ")
+        }
+
     }
+        
+    
 }
 
-readJsonFile(jsonFileName: "Info")
+readJsonFile(jsonFileName: "InfoSingle")

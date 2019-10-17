@@ -1,0 +1,18 @@
+{
+ "@class": "ca.lambton.payroll.employee.FullTime",
+ "id": 2,
+ "name": "Pritesh",
+ "age": 35,
+ "vehicle": {
+   "@class": "ca.lambton.payroll.vehicle.Car",
+   "id": 0,
+   "make": "BMW",
+   "plate": "EFGH-123 ",
+   "model": "MODEL 2",
+   "insurance": true,
+   "type": "Car"
+ },
+ "salary": 8500.0,
+ "bonus": 300.0,
+ "type": "FullTime"
+}
