@@ -16,7 +16,9 @@ class  Car: Vehicle {
     
 //    method ovveride
      override func displayData() {
-        super.displayData()             //Method called of Vehicle Class
+        print("The employee has Car")
+        super.displayData()
+        //Method called of Vehicle Class
         print("The model is : \(model!)")
          print("Insurance is \(insurance!)")
          }

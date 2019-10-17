@@ -14,6 +14,7 @@ class Motorcycle: Vehicle {
     
     //method Iprintable
        override func displayData() {
+    print("The employee has Motorcycle")
         super.displayData() //comment added
         print("The model is : \(model!)")
         print("Insurance is \(insurance!)")
