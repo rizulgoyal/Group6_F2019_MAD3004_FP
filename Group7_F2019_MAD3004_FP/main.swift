@@ -28,4 +28,20 @@ func readJsonFile(jsonFileName: String)
     }
 
 
+    var empObject = Employee()
+    
+   if let jsonDictionay = json as? [String: AnyObject]
+   {
+    for newDict in jsonDictionay
+    {
+        if let empID = newDict.value["id"] as? Int
+       {
+           print(empID)
+        empObject.employeeID=empID
+       }
+      
 }
+    }
+}
+
+readJsonFile(jsonFileName: "Info")
