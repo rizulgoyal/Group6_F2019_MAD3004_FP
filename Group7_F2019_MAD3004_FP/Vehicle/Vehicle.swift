@@ -13,6 +13,7 @@ class Vehicle : IPrintable  {
 
  var make :String?
  var plate :String?
+    var type : String?
  
     
     
