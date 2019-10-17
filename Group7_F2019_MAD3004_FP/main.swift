@@ -154,6 +154,10 @@ func readJsonFile(jsonFileName: String)
 
                 
             }
+            else {
+                
+                print("The employee has no vehicle registered")
+            }
             }
         }
         else
