@@ -27,8 +27,8 @@ func readJsonFile(jsonFileName: String)
         return
     }
 
-
-    var empObject = Employee()
+    var empObject : Employee
+    empObject = Employee()
     
    if let jsonDictionay = json as? [String: Any]
    {
@@ -82,7 +82,79 @@ func readJsonFile(jsonFileName: String)
         {
             ftime.bonus=empbonus
         }
-        ftime.displayData()
+            
+            ftime.displayData()
+
+            // vehicle starts from here
+            if let vehicleDict = jsonDictionay["vehicle"] as? Dictionary<String,Any>
+            {
+                let typecheck = vehicleDict["type"] as? String
+                
+                if typecheck == "Car"
+                {
+                var car : Car
+                car = Car()
+            
+                if let make = vehicleDict["make"] as? String
+                {
+                    car.make=make
+                }
+                
+                if let plate = vehicleDict["plate"] as? String
+                {
+                    car.plate=plate
+                }
+                
+                if let type = vehicleDict["type"] as? String
+                {
+                    car.type=type
+                }
+                
+                
+                if let model = vehicleDict["model"] as? String
+                {
+                    car.model=model
+                }
+                if let insurance = vehicleDict["insurance"] as? Bool
+                    {
+                        car.insurance=insurance
+                    }
+                    car.displayData()
+                }
+                else if typecheck == "Motorcycle"
+                {
+                var motorcycle : Motorcycle
+                motorcycle = Motorcycle()
+                
+                if let make = vehicleDict["make"] as? String
+                {
+                    motorcycle.make=make
+                }
+                
+                if let plate = vehicleDict["plate"] as? String
+                {
+                    motorcycle.plate=plate
+                }
+                
+                if let type = vehicleDict["type"] as? String
+                {
+                    motorcycle.type=type
+                }
+                    
+                if let model = vehicleDict["model"] as? String
+                {
+                    motorcycle.model=model
+                }
+                if let insurance = vehicleDict["insurance"] as? Bool
+                    {
+                        motorcycle.insurance=insurance
+                    }
+                    motorcycle.displayData()
+                }
+
+                
+            }
+            }
         }
         else
         {
@@ -92,6 +164,6 @@ func readJsonFile(jsonFileName: String)
     }
         
     
-}
+
 
 readJsonFile(jsonFileName: "InfoSingle")
