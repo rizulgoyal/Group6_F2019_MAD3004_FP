@@ -14,7 +14,7 @@ class Motorcycle: Vehicle ,IPrintable {
     
     //method Iprintable
     func displayData() {
-        super.printmydata()
+        super.printmydata() //comment added
         print("The model is : \(model!)")
         print("Insurance is \(insurance!)")
     }
