@@ -19,7 +19,9 @@ var objPart = PartTime(employeeID: 2, employeeName: "Anmol", employeeAge: 23, ra
 
 var objectEmp = Employee(employeeID: 2, employeeName: "Rizul", employeeAge: 25)
 
-var obj
+var objPart1 = CommisionBasedPartTime(employeeID: 2, employeeName: "Anmol", employeeAge: 23, rate: 20, hoursworked: 25, commisionPercentage: 10)
+objPart1.displayData()
+
 
 //new branch
 

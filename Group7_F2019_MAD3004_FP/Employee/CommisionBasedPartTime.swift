@@ -14,7 +14,8 @@ class CommisionBasedPartTime : PartTime
     var totalSalary : Float
     {
         let basicSalary = Float (hoursworked!) * rate!
-        return basicSalary * Float(commisionPercentage!)/100
+        let commisionDollars =  basicSalary * Float(commisionPercentage!)/100
+        return commisionDollars+basicSalary
     }
 
     
@@ -27,6 +28,8 @@ class CommisionBasedPartTime : PartTime
 
     override func displayData() {
         super.displayData()
+        
+
         
     }
   
