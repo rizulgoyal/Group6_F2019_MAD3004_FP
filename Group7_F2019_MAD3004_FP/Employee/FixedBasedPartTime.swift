@@ -12,10 +12,21 @@ class FixedBasedPartTime: PartTime
 
 {
     var fixedAmount : Int?
+    var totalSalary : Float
+    {
+        let basicSalary = Float (hoursworked!) * rate!
+        return Float(fixedAmount!)+basicSalary
+    }
+    
     
     
     override func displayData() {
-        <#code#>
+        super.displayData()
+        print("The Payrate is : \(rate!)")
+        print("The Hours Worked are : \(hoursworked!)")
+        print("The Fixed Amount is : \(fixedAmount!)")
+        print("The Total Salary is : \(totalSalary)")
+        
     }
     
 }
