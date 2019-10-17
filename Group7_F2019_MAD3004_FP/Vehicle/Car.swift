@@ -7,6 +7,18 @@
 //
 
 import Foundation
+
+class car
+{
+    
+    
+}
+
+
+
+
+
+
 class  Car: Vehicle {
     
     
@@ -23,4 +35,4 @@ class  Car: Vehicle {
          print("Insurance is \(insurance!)")
          }
     }
-    
+  
