@@ -8,7 +8,11 @@
 
 import Foundation
 class Motorcycle: Vehicle {
+    //Declared variables
+    var model :String?
+    var insurance : Bool?
     
+    //method override
     
     
 }
