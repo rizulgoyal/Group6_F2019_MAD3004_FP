@@ -18,10 +18,10 @@ class FixedBasedPartTime: PartTime
         return Float(fixedAmount!)+basicSalary
     }
     
-    init(employeeID: Int, employeeName: String, employeeAge: Int, rate: Float, hoursworked: Int, fixedAmount : Int) {
-        super.init(employeeID: employeeID, employeeName: employeeName, employeeAge: employeeAge, rate: rate, hoursworked: hoursworked)
-        self.fixedAmount=fixedAmount
-    }
+//    init(employeeID: Int, employeeName: String, employeeAge: Int, rate: Float, hoursworked: Int, fixedAmount : Int) {
+//        super.init(employeeID: employeeID, employeeName: employeeName, employeeAge: employeeAge, rate: rate, hoursworked: hoursworked)
+//        self.fixedAmount=fixedAmount
+//    }
     
     
     

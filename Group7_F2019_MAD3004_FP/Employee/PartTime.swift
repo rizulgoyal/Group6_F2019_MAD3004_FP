@@ -16,13 +16,13 @@ class PartTime: Employee
     var hoursworked : Int?
     
     // init function
-    init(employeeID: Int, employeeName: String, employeeAge: Int, rate: Float,hoursworked: Int) {
-        super.init(employeeID: employeeID, employeeName: employeeName, employeeAge: employeeAge)
-        self.rate=rate
-        self.hoursworked=hoursworked
-    }
-    
-    
+//    init(employeeID: Int, employeeName: String, employeeAge: Int, rate: Float,hoursworked: Int) {
+//        super.init(employeeID: employeeID, employeeName: employeeName, employeeAge: employeeAge)
+//        self.rate=rate
+//        self.hoursworked=hoursworked
+//    }
+//
+//
     
     
     

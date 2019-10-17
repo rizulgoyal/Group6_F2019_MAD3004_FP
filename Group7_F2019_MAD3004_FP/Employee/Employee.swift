@@ -17,6 +17,7 @@ class Employee : Vehicle
     var employeeName : String?
     var employeeAge : Int?
     var currentYear : Int = 2019
+    var vehicle = Vehicle()
     
     
     var birthYear : Int{
@@ -24,11 +25,11 @@ class Employee : Vehicle
     }
 
     
-    init(employeeID:Int,employeeName:String,employeeAge:Int) {
-        self.employeeID=employeeID
-        self.employeeName=employeeName
-        self.employeeAge=employeeAge
-    }
+//    init(employeeID:Int,employeeName:String,employeeAge:Int) {
+//        self.employeeID=employeeID
+//        self.employeeName=employeeName
+//        self.employeeAge=employeeAge
+//    }
     
     func calcEarnings()
     {
@@ -41,6 +42,7 @@ class Employee : Vehicle
         print("Employee ID : \(self.employeeID!)")
         print("Employee Name : \(self.employeeName!)")
         print("Employee Birth Year : \(birthYear)")
+        
         
         
         
