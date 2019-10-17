@@ -11,7 +11,7 @@ class FullTime: Employee {
     
     var salary :Float?
     var bonus :Float?
-    var totalsalary :Float?
+    var totalsalary :Float
     {
         let temp = salary! + bonus!
         return Float(temp)
@@ -21,6 +21,10 @@ class FullTime: Employee {
     //override method
     override func displayData() {
         super.displayData()
+        print("The Employee is Full Time")
+               print("The Salary is : \(salary!)")
+               print("The Bonus is : \(bonus!)")
+               print("The Total Salary is : \(totalsalary)")
     }
    
 }
