@@ -26,7 +26,7 @@ class CommisionBasedPartTime : PartTime
     }
     
 
-    override func displayData() {
+     override func displayData() {
         super.displayData()
         print("The Employee is Part Time/Commision Based")
         print("The Payrate is : \(rate!)")

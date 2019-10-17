@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Vehicle {
+class Vehicle : IPrintable  {
 
 //declared variables
 
@@ -17,7 +17,7 @@ class Vehicle {
     
     
     //protocol method
-    func printmydata()  {
+     func displayData()  {
         print("The Make is : \(make!)")
         print("The plate no is : \(plate!)")
     }

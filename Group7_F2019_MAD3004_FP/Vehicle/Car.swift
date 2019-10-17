@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class  Car: Vehicle ,IPrintable {
+class  Car: Vehicle {
     
     
     //Declared Variables
@@ -15,8 +15,8 @@ class  Car: Vehicle ,IPrintable {
     var insurance: Bool?
     
 //    method ovveride
-    func displayData() {
-        super.printmydata()             //Method called of Vehicle Class
+     override func displayData() {
+        super.displayData()             //Method called of Vehicle Class
         print("The model is : \(model!)")
          print("Insurance is \(insurance!)")
          }
