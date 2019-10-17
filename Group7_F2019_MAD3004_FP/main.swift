@@ -39,7 +39,17 @@ func readJsonFile(jsonFileName: String)
            print(empID)
         empObject.employeeID=empID
        }
-      
+        if let empName = newDict.value["name"] as? String
+    {
+    print(empName)
+        empObject.employeeName=empName
+    }
+        if let empAge = newDict.value["age"] as? Int
+    {
+    print(empAge)
+        empObject.employeeAge=empAge
+    }
+    empObject.displayData()
 }
     }
 }
