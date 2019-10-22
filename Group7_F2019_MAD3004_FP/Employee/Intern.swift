@@ -19,7 +19,7 @@ class Intern:Employee
         print("The School Name is : \(schoolName!)")
         print("The Salary is : \(salary!)")
         
-        
+        //test
     }
     
 }
