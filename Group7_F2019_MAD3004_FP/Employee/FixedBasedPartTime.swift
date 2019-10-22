@@ -24,7 +24,7 @@ class FixedBasedPartTime: PartTime
 //    }
     
     
-    
+    // function override to display data
     override func displayData() {
         super.displayData()
         print("Employee is Part Time/Fixed Amount Based")
