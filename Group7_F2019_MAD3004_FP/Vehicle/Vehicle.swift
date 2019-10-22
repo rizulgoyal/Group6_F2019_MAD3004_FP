@@ -30,8 +30,8 @@ class Vehicle : IPrintable  {
      func displayData()  {
         
         
-        print("The Make is : \(make!)")
-        print("The plate no is : \(plate!)")
+        print("    -   Make : \(make!)")
+        print("    -   Plate : \(plate!)")
     }
   
     
