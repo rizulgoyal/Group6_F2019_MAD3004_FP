@@ -18,7 +18,7 @@ class FullTime: Employee {
         
     }
     
-    //override method
+    // function override to display data
     override func displayData() {
         super.displayData()
         print("The Employee is Full Time")

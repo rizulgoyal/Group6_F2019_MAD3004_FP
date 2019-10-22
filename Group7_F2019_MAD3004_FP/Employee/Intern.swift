@@ -13,6 +13,8 @@ class Intern:Employee
     var schoolName : String?
     var salary : Float?
     
+    // function override to display data
+
     override func displayData() {
         super.displayData()
         print("The Employee is Intern")

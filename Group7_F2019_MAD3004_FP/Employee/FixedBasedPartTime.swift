@@ -11,6 +11,7 @@ import Foundation
 class FixedBasedPartTime: PartTime
 
 {
+    
     var fixedAmount : Int?
     var totalSalary : Float
     {

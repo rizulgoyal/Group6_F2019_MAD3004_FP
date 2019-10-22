@@ -25,6 +25,7 @@ class CommisionBasedPartTime : PartTime
 //        self.commisionPercentage=commisionPercentage
 //    }
     
+    // function override to display data
 
      override func displayData() {
         super.displayData()
