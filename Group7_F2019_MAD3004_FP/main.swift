@@ -163,6 +163,9 @@ func readJsonFile(jsonFileName: String)
             
             
         }
+        else {
+            print("Type of employee doesnot match ")
+        }
         
         
         
@@ -240,6 +243,8 @@ func readJsonFile(jsonFileName: String)
                 
                 print("The employee has no vehicle registered")
             }
+        
+        print("*******************************************")
             }
         }
     
