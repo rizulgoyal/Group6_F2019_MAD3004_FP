@@ -29,7 +29,7 @@ class CommisionBasedPartTime : PartTime
      override func displayData() {
         super.displayData()
         print("The Employee is Part Time/Commision Based")
-        print("The Payrate is : \(rate!)")
+        print("The Payrate is : \(rate!.insertCurrency())")
         print("The Hours Worked are : \(hoursworked!)")
         print("The percentage comission is : \(commisionPercentage!)")
         print("The Total Salary is : \(totalSalary.insertCurrency())")
