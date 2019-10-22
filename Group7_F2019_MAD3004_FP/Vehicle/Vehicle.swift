@@ -7,9 +7,6 @@
 //
 
 import Foundation
-
-
-
 class Vehicle : IPrintable  {
 
 
@@ -17,22 +14,25 @@ class Vehicle : IPrintable  {
 
  var make :String?
  var plate :String?
-
-    var type : String?
-
-
+ var type : String?
  var vehicle :Bool?
 
     
 
     
+
+//protocol method
+func displayData()  {
+print("The Make is : \(make!)")
+print("The plate no is : \(plate!)")
+
     //protocol method
      func displayData()  {
         
         
         print("    -   Make : \(make!)")
         print("    -   Plate : \(plate!)")
+
     }
-  
-    
 }
+

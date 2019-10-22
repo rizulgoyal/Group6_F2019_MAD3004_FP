@@ -7,18 +7,6 @@
 //
 
 import Foundation
-
-class car
-{
-    
-    
-}
-
-
-
-
-
-
 class  Car: Vehicle {
     
     
@@ -26,13 +14,18 @@ class  Car: Vehicle {
     var model: String?
     var insurance: Bool?
     
-//    method ovveride
+    //method override
      override func displayData() {
         print("Employee has a Car")
         super.displayData()
+    //Method called of Vehicle Class
+        print("The model is : \(model!)")
+         print("Insurance is \(insurance!)")
+
         //Method called of Vehicle Class
         print("    -   Model : \(model!)")
         print("    -   Insurance : \(insurance!)")
+
          }
     }
   
