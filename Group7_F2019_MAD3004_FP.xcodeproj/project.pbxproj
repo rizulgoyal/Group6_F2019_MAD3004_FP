@@ -18,6 +18,7 @@
 		9B7A698F2356A21100FBBCBC /* IPrintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A698E2356A21100FBBCBC /* IPrintable.swift */; };
 		9B7A69922356A71400FBBCBC /* PartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A69912356A71400FBBCBC /* PartTime.swift */; };
 		9B99512A235E8F2900E9AE69 /* Extension_Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B995129235E8F2900E9AE69 /* Extension_Float.swift */; };
+		9B99512C235E918900E9AE69 /* Extemnsion_Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B99512B235E918900E9AE69 /* Extemnsion_Int.swift */; };
 		E043C7612358150400FCB8FF /* Info.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2639B2DD2357ED99002B9109 /* Info.json */; };
 		E0F97BBE2358819800C4FE01 /* Intern.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F97BBD2358819800C4FE01 /* Intern.swift */; };
 		E0F97BC123589C1B00C4FE01 /* InfoSingle.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = E0F97BC023589C0E00C4FE01 /* InfoSingle.json */; };
@@ -60,6 +61,7 @@
 		9B7A698E2356A21100FBBCBC /* IPrintable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPrintable.swift; sourceTree = "<group>"; };
 		9B7A69912356A71400FBBCBC /* PartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartTime.swift; sourceTree = "<group>"; };
 		9B995129235E8F2900E9AE69 /* Extension_Float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_Float.swift; sourceTree = "<group>"; };
+		9B99512B235E918900E9AE69 /* Extemnsion_Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extemnsion_Int.swift; sourceTree = "<group>"; };
 		E0F97BBD2358819800C4FE01 /* Intern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intern.swift; sourceTree = "<group>"; };
 		E0F97BC023589C0E00C4FE01 /* InfoSingle.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = InfoSingle.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 				2639B2DD2357ED99002B9109 /* Info.json */,
 				E0F97BC023589C0E00C4FE01 /* InfoSingle.json */,
 				9B995129235E8F2900E9AE69 /* Extension_Float.swift */,
+				9B99512B235E918900E9AE69 /* Extemnsion_Int.swift */,
 			);
 			path = Group7_F2019_MAD3004_FP;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			files = (
 				9B1BB42D2357E74600DDD85B /* FixedBasedPartTime.swift in Sources */,
 				2639B2E12357EF63002B9109 /* FullTime.swift in Sources */,
+				9B99512C235E918900E9AE69 /* Extemnsion_Int.swift in Sources */,
 				2639B2C3235694D7002B9109 /* Vehicle.swift in Sources */,
 				9B7A698D2356A20500FBBCBC /* Employee.swift in Sources */,
 				9B1BB4162357D04200DDD85B /* CommisionBasedPartTime.swift in Sources */,
