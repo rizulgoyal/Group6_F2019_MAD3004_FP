@@ -26,7 +26,7 @@ func readJsonFile(jsonFileName: String)
     guard let json = try? JSONSerialization.jsonObject(with: data, options: []) else {
         return
     }
-
+    // employee object is completed
     var empObject : Employee
     empObject = Employee()
     
