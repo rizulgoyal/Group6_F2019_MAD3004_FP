@@ -16,12 +16,16 @@ class  Car: Vehicle {
     
     //method override
      override func displayData() {
-        print("The employee has Car")
+        print("Employee has a Car")
         super.displayData()
-        
     //Method called of Vehicle Class
         print("The model is : \(model!)")
          print("Insurance is \(insurance!)")
+
+        //Method called of Vehicle Class
+        print("    -   Model : \(model!)")
+        print("    -   Insurance : \(insurance!)")
+
          }
     }
   

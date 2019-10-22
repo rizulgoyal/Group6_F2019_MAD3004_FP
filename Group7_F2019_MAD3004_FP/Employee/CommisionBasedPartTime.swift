@@ -25,14 +25,15 @@ class CommisionBasedPartTime : PartTime
 //        self.commisionPercentage=commisionPercentage
 //    }
     
+    // function override to display data
 
      override func displayData() {
         super.displayData()
-        print("The Employee is Part Time/Commision Based")
-        print("The Payrate is : \(rate!)")
-        print("The Hours Worked are : \(hoursworked!)")
-        print("The percentage comission is : \(commisionPercentage!)")
-        print("The Total Salary is : \(totalSalary)")
+        print("Employee is Part Time/Commision Based")
+        print("    -   Rate :  \(rate!.insertCurrency())")
+        print("    -   Hours Worked : \(hoursworked!.insertHours())")
+        print("    -   Comission : \(commisionPercentage!)")
+        print("    -   Total Earnings : \(totalSalary.insertCurrency())")
 
 
         

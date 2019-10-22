@@ -11,6 +11,7 @@ import Foundation
 print("Hello, World!")
 print("my project")
 
+
 func readJsonFile(jsonFileName: String)
 {
     let url = Bundle.main.url(forResource: jsonFileName, withExtension: "json")
@@ -171,3 +172,6 @@ func readJsonFile(jsonFileName: String)
 
 
 readJsonFile(jsonFileName: "InfoSingle")
+
+var jsonObject = JSONHandling()
+jsonObject.readJsonFile(jsonFileName: "Info")

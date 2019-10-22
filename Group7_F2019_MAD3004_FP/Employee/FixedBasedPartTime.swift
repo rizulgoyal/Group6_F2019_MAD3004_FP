@@ -11,6 +11,7 @@ import Foundation
 class FixedBasedPartTime: PartTime
 
 {
+    
     var fixedAmount : Int?
     var totalSalary : Float
     {
@@ -24,14 +25,15 @@ class FixedBasedPartTime: PartTime
 //    }
     
     
-    
+    // function override to display data
     override func displayData() {
         super.displayData()
-        print("The Employee is Part Time/Fixed Amount Based")
-        print("The Payrate is : \(rate!)")
-        print("The Hours Worked are : \(hoursworked!)")
-        print("The Fixed Amount is : \(fixedAmount!)")
-        print("The Total Salary is : \(totalSalary)")
+        print("Employee is Part Time/Fixed Amount Based")
+        print("    -   Rate :  \(rate!.insertCurrency())")
+        print("    -   Hours Worked : \(hoursworked!.insertHours())")
+        print("    -   Fixed Amount : \(fixedAmount!.insertDollar())")
+        print("    -   Total Earnings : \(totalSalary.insertCurrency())")
+
         
     }
     

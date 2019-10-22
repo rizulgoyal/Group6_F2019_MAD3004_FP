@@ -13,10 +13,18 @@ class Motorcycle: Vehicle {
       var insurance : Bool?
     
     //method Iprintable
+
     override func displayData() {
     print("The employee has Motorcycle")
     super.displayData()                     //comment added
     print("The model is : \(model!)")
     print("Insurance is \(insurance!)")
+
+       override func displayData() {
+    print("Employee has a Motorcycle")
+        super.displayData() //comment added
+        print("    -   Model : \(model!)")
+        print("    -   Insurance : \(insurance!)")
+
     }
 }
