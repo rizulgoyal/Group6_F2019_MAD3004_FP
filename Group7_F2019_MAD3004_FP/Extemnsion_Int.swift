@@ -10,5 +10,8 @@ import Foundation
 
 extension Int
 {
-    
+    func insertHours() -> String
+    {
+        return "\(self) Hours"
+    }
 }
