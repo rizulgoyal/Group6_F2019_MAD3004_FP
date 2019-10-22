@@ -10,6 +10,7 @@ import Foundation
 
 class Intern:Employee
 {
+    
     var schoolName : String?
     var salary : Float?
     

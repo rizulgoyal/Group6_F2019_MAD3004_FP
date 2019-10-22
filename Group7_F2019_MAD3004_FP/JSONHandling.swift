@@ -12,6 +12,7 @@ import Foundation
 
 class JSONHandling
 {
+    // function for reading file from resource
 
 func readJsonFile(jsonFileName: String)
 {
