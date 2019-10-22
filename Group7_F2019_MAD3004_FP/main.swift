@@ -11,6 +11,7 @@ import Foundation
 print("Hello, World!")
 print("my project")
 
+// function to read JSON File 
 
 func readJsonFile(jsonFileName: String)
 {
