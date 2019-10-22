@@ -27,41 +27,22 @@ func readJsonFile(jsonFileName: String)
         return
     }
 
-    var empObject : Employee
-    empObject = Employee()
+
+   
+    guard let jsonArray = json as? [Any] else { return }
     
-   if let jsonDictionay = json as? [String: Any]
-   {
-    
-//    for (key,value) in jsonDictionay
-//    {
-        if let empID = jsonDictionay["id"] as? Int
-       {
-           print(empID)
-        empObject.employeeID=empID
-       }
-    if let empName = jsonDictionay["name"] as? String
+    for i in jsonArray
     {
-    print(empName)
-        empObject.employeeName=empName
-    }
-    if let empAge = jsonDictionay["age"] as? Int
-    {
-    print(empAge)
-        empObject.employeeAge=empAge
-    }
-    empObject.displayData()
-}
-//    }
     
-    var ftime : FullTime
-     ftime = FullTime()
+   
     
-    if let jsonDictionay = json as? [String: Any]
+    if let jsonDictionay = i as? [String: Any]
        {
         let emptype = jsonDictionay["type"] as? String
         if  emptype == "FullTime"
         {
+            var ftime : FullTime
+            ftime = FullTime()
             if let empID = jsonDictionay["id"] as? Int
            {
             ftime.employeeID=empID
@@ -168,6 +149,6 @@ func readJsonFile(jsonFileName: String)
     }
         
     
+}
 
-
-readJsonFile(jsonFileName: "InfoSingle")
+readJsonFile(jsonFileName: "Info")
