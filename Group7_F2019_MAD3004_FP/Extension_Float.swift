@@ -9,5 +9,8 @@
 import Foundation
 
 extension Float{
-    
+    func insertCurrency()-> String
+    {
+        return String.init(format: "$ %0.2f", self)
+    }
 }
