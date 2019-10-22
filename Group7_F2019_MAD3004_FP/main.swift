@@ -65,6 +65,32 @@ func readJsonFile(jsonFileName: String)
         }
             
             ftime.displayData()
+        }
+        
+        else if emptype == "PartTime / Fixed Amount"
+        {
+            var fixedparttime : FixedBasedPartTime
+            fixedparttime=FixedBasedPartTime()
+            
+            if let empID = jsonDictionay["id"] as? Int
+            {
+                fixedparttime.employeeID=empID
+            }
+            if let empName = jsonDictionay["name"] as? String
+            {
+                fixedparttime.employeeName=empName
+            }
+            if let empAge = jsonDictionay["age"] as? Int
+            {
+                fixedparttime.employeeAge=empAge
+            }
+            if let emprate = jsonDictionay["rate"] as? Float
+            {
+                fixedparttime.rate=emprate
+            }
+            
+            
+        }
 
             // vehicle starts from here
             if let vehicleDict = jsonDictionay["vehicle"] as? Dictionary<String,Any>
@@ -141,12 +167,9 @@ func readJsonFile(jsonFileName: String)
             }
             }
         }
-        else
-        {
-            print("it doesnot match the type ")
-        }
+    
 
-    }
+    
         
     
 }
