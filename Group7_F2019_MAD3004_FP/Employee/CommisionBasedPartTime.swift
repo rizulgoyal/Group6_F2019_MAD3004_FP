@@ -34,7 +34,11 @@ class CommisionBasedPartTime : PartTime
         print("    -   Hours Worked : \(hoursworked!.insertHours())")
         print("    -   Comission : \(commisionPercentage!)")
         print("    -   Total Earnings : \(totalSalary.insertCurrency())")
-
+        print("         ")
+        print("    ** CALCULATION **")
+        print("         ")
+        print( "\(hoursworked!.insertHours()) * \(rate!.insertCurrency()) * \(commisionPercentage!) / 100 = \(totalSalary.insertCurrency()))")
+        print("     ")
 
         
     }
