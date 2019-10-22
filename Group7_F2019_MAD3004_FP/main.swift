@@ -96,9 +96,74 @@ func readJsonFile(jsonFileName: String)
             {
                 fixedparttime.fixedAmount=empFixedAmount
             }
+            fixedparttime.displayData()
             
             
         }
+        
+        else if emptype == "PartTime / Commissioned"
+        {
+            var commisiomnparttime : CommisionBasedPartTime
+            commisiomnparttime=CommisionBasedPartTime()
+            
+            if let empID = jsonDictionay["id"] as? Int
+            {
+                commisiomnparttime.employeeID=empID
+            }
+            if let empName = jsonDictionay["name"] as? String
+            {
+                commisiomnparttime.employeeName=empName
+            }
+            if let empAge = jsonDictionay["age"] as? Int
+            {
+                commisiomnparttime.employeeAge=empAge
+            }
+            if let empRate = jsonDictionay["rate"] as? Float
+            {
+                commisiomnparttime.rate=empRate
+            }
+            if let empHours = jsonDictionay["hoursWorked"] as? Int
+            {
+                commisiomnparttime.hoursworked=empHours
+            }
+            if let empCommision = jsonDictionay["commissionPercent"] as? Int
+            {
+                commisiomnparttime.commisionPercentage=empCommision
+            }
+            commisiomnparttime.displayData()
+            
+        }
+        
+        else if emptype == "Intern"
+        {
+            var intern : Intern
+            intern=Intern()
+            
+            if let empID = jsonDictionay["id"] as? Int
+            {
+                intern.employeeID=empID
+            }
+            if let empName = jsonDictionay["name"] as? String
+            {
+                intern.employeeName=empName
+            }
+            if let empAge = jsonDictionay["age"] as? Int
+            {
+                intern.employeeAge=empAge
+            }
+            if let empSchool = jsonDictionay["schoolName"] as? String
+            {
+                intern.schoolName=empSchool
+            }
+            if let empSalary = jsonDictionay["salary"] as? Float
+            {
+                intern.salary=empSalary
+            }
+            intern.displayData()
+            
+            
+        }
+        
         
         
 
