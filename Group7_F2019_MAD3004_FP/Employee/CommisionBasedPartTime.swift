@@ -32,7 +32,7 @@ class CommisionBasedPartTime : PartTime
         print("The Payrate is : \(rate!)")
         print("The Hours Worked are : \(hoursworked!)")
         print("The percentage comission is : \(commisionPercentage!)")
-        print("The Total Salary is : \(totalSalary)")
+        print("The Total Salary is : \(totalSalary.insertCurrency())")
 
 
         
