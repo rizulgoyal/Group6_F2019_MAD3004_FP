@@ -28,10 +28,10 @@ class FixedBasedPartTime: PartTime
     override func displayData() {
         super.displayData()
         print("The Employee is Part Time/Fixed Amount Based")
-        print("The Payrate is : \(rate!)")
-        print("The Hours Worked are : \(hoursworked!)")
-        print("The Fixed Amount is : \(fixedAmount!)")
-        print("The Total Salary is : \(totalSalary)")
+        print("The Payrate is : \(rate!.insertCurrency())")
+        print("The Hours Worked are : \(hoursworked!.insertHours())")
+        print("The Fixed Amount is : \(fixedAmount!.insertDollar())")
+        print("The Total Salary is : \(totalSalary.insertCurrency())")
         
     }
     

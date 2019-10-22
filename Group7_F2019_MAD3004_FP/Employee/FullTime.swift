@@ -22,9 +22,9 @@ class FullTime: Employee {
     override func displayData() {
         super.displayData()
         print("The Employee is Full Time")
-               print("The Salary is : \(salary!)")
-               print("The Bonus is : \(bonus!)")
-               print("The Total Salary is : \(totalsalary)")
+               print("The Salary is : \(salary!.insertCurrency())")
+               print("The Bonus is : \(bonus!.insertCurrency())")
+               print("The Total Salary is : \(totalsalary.insertCurrency())")
     }
    
 }
