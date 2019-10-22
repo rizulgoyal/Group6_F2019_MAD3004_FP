@@ -27,41 +27,22 @@ func readJsonFile(jsonFileName: String)
         return
     }
 
-    var empObject : Employee
-    empObject = Employee()
+
+   
+    guard let jsonArray = json as? [Any] else { return }
     
-   if let jsonDictionay = json as? [String: Any]
-   {
-    
-//    for (key,value) in jsonDictionay
-//    {
-        if let empID = jsonDictionay["id"] as? Int
-       {
-           print(empID)
-        empObject.employeeID=empID
-       }
-    if let empName = jsonDictionay["name"] as? String
+    for i in jsonArray
     {
-    print(empName)
-        empObject.employeeName=empName
-    }
-    if let empAge = jsonDictionay["age"] as? Int
-    {
-    print(empAge)
-        empObject.employeeAge=empAge
-    }
-    empObject.displayData()
-}
-//    }
     
-    var ftime : FullTime
-     ftime = FullTime()
+   
     
-    if let jsonDictionay = json as? [String: Any]
+    if let jsonDictionay = i as? [String: Any]
        {
         let emptype = jsonDictionay["type"] as? String
         if  emptype == "FullTime"
         {
+            var ftime : FullTime
+            ftime = FullTime()
             if let empID = jsonDictionay["id"] as? Int
            {
             ftime.employeeID=empID
@@ -84,6 +65,110 @@ func readJsonFile(jsonFileName: String)
         }
             
             ftime.displayData()
+        }
+        
+        else if emptype == "PartTime / Fixed Amount"
+        {
+            var fixedparttime : FixedBasedPartTime
+            fixedparttime=FixedBasedPartTime()
+            
+            if let empID = jsonDictionay["id"] as? Int
+            {
+                fixedparttime.employeeID=empID
+            }
+            if let empName = jsonDictionay["name"] as? String
+            {
+                fixedparttime.employeeName=empName
+            }
+            if let empAge = jsonDictionay["age"] as? Int
+            {
+                fixedparttime.employeeAge=empAge
+            }
+            if let empRate = jsonDictionay["rate"] as? Float
+            {
+                fixedparttime.rate=empRate
+            }
+            if let empHours = jsonDictionay["hoursWorked"] as? Int
+            {
+                fixedparttime.hoursworked=empHours
+            }
+            if let empFixedAmount = jsonDictionay["hoursWorked"] as? Int
+            {
+                fixedparttime.fixedAmount=empFixedAmount
+            }
+            fixedparttime.displayData()
+            
+            
+        }
+        
+        else if emptype == "PartTime / Commissioned"
+        {
+            var commisiomnparttime : CommisionBasedPartTime
+            commisiomnparttime=CommisionBasedPartTime()
+            
+            if let empID = jsonDictionay["id"] as? Int
+            {
+                commisiomnparttime.employeeID=empID
+            }
+            if let empName = jsonDictionay["name"] as? String
+            {
+                commisiomnparttime.employeeName=empName
+            }
+            if let empAge = jsonDictionay["age"] as? Int
+            {
+                commisiomnparttime.employeeAge=empAge
+            }
+            if let empRate = jsonDictionay["rate"] as? Float
+            {
+                commisiomnparttime.rate=empRate
+            }
+            if let empHours = jsonDictionay["hoursWorked"] as? Int
+            {
+                commisiomnparttime.hoursworked=empHours
+            }
+            if let empCommision = jsonDictionay["commissionPercent"] as? Int
+            {
+                commisiomnparttime.commisionPercentage=empCommision
+            }
+            commisiomnparttime.displayData()
+            
+        }
+        
+        else if emptype == "Intern"
+        {
+            var intern : Intern
+            intern=Intern()
+            
+            if let empID = jsonDictionay["id"] as? Int
+            {
+                intern.employeeID=empID
+            }
+            if let empName = jsonDictionay["name"] as? String
+            {
+                intern.employeeName=empName
+            }
+            if let empAge = jsonDictionay["age"] as? Int
+            {
+                intern.employeeAge=empAge
+            }
+            if let empSchool = jsonDictionay["schoolName"] as? String
+            {
+                intern.schoolName=empSchool
+            }
+            if let empSalary = jsonDictionay["salary"] as? Float
+            {
+                intern.salary=empSalary
+            }
+            intern.displayData()
+            
+            
+        }
+        else {
+            print("Type of employee doesnot match ")
+        }
+        
+        
+        
 
             // vehicle starts from here
             if let vehicleDict = jsonDictionay["vehicle"] as? Dictionary<String,Any>
@@ -158,16 +243,15 @@ func readJsonFile(jsonFileName: String)
                 
                 print("The employee has no vehicle registered")
             }
+        
+        print("*******************************************")
             }
         }
-        else
-        {
-            print("it doesnot match the type ")
-        }
-
-    }
-        
     
 
+    
+        
+    
+}
 
-readJsonFile(jsonFileName: "InfoSingle")
+readJsonFile(jsonFileName: "Info")
