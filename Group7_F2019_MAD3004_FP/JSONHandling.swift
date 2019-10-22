@@ -31,16 +31,17 @@ func readJsonFile(jsonFileName: String)
     }
     
     
-    
+    // storing in array for loop through all data
     guard let jsonArray = json as? [Any] else { return }
     
     for i in jsonArray
     {
         
         
-        
+        // storing data in dictionary
         if let jsonDictionay = i as? [String: Any]
         {
+            // checking type of employee and apply condition to create different object 
             let emptype = jsonDictionay["type"] as? String
             if  emptype == "FullTime"
             {
