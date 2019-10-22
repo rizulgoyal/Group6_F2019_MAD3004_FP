@@ -84,13 +84,23 @@ func readJsonFile(jsonFileName: String)
             {
                 fixedparttime.employeeAge=empAge
             }
-            if let emprate = jsonDictionay["rate"] as? Float
+            if let empRate = jsonDictionay["rate"] as? Float
             {
-                fixedparttime.rate=emprate
+                fixedparttime.rate=empRate
+            }
+            if let empHours = jsonDictionay["hoursWorked"] as? Int
+            {
+                fixedparttime.hoursworked=empHours
+            }
+            if let empFixedAmount = jsonDictionay["hoursWorked"] as? Int
+            {
+                fixedparttime.fixedAmount=empFixedAmount
             }
             
             
         }
+        
+        
 
             // vehicle starts from here
             if let vehicleDict = jsonDictionay["vehicle"] as? Dictionary<String,Any>
