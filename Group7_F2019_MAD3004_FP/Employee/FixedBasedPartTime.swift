@@ -30,7 +30,7 @@ class FixedBasedPartTime: PartTime
         print("The Employee is Part Time/Fixed Amount Based")
         print("The Payrate is : \(rate!.insertCurrency())")
         print("The Hours Worked are : \(hoursworked!.insertHours())")
-        print("The Fixed Amount is : \(fixedAmount!)")
+        print("The Fixed Amount is : \(fixedAmount!.insertDollar())")
         print("The Total Salary is : \(totalSalary.insertCurrency())")
         
     }

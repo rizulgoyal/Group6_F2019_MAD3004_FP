@@ -14,4 +14,8 @@ extension Int
     {
         return "\(self) Hours"
     }
+    func insertDollar()-> String
+    {
+        return String.init(format: "$ %0.2f", self)
+    }
 }
