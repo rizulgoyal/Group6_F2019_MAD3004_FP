@@ -155,29 +155,7 @@ class JSONHandling
                     
                     
                     
-                    if let empID = jsonDictionay["id"] as? Int
-                        
-                    {
-                        
-                        fixedparttime.employeeID=empID
-                        
-                    }
-                    
-                    if let empName = jsonDictionay["name"] as? String
-                        
-                    {
-                        
-                        fixedparttime.employeeName=empName
-                        
-                    }
-                    
-                    if let empAge = jsonDictionay["age"] as? Int
-                        
-                    {
-                        
-                        fixedparttime.employeeAge=empAge
-                        
-                    }
+                    fixedparttime.basicDetails(employeeDict: jsonDictionay, object: fixedparttime)
                     
                     if let empRate = jsonDictionay["rate"] as? Float
                         
@@ -235,30 +213,8 @@ class JSONHandling
                     
                     
                     
-                    if let empID = jsonDictionay["id"] as? Int
-                        
-                    {
-                        
-                        commisiomnparttime.employeeID=empID
-                        
-                    }
-                    
-                    if let empName = jsonDictionay["name"] as? String
-                        
-                    {
-                        
-                        commisiomnparttime.employeeName=empName
-                        
-                    }
-                    
-                    if let empAge = jsonDictionay["age"] as? Int
-                        
-                    {
-                        
-                        commisiomnparttime.employeeAge=empAge
-                        
-                    }
-                    
+                    commisiomnparttime.basicDetails(employeeDict: jsonDictionay, object: commisiomnparttime)
+
                     if let empRate = jsonDictionay["rate"] as? Float
                         
                     {
@@ -316,30 +272,8 @@ class JSONHandling
                     
                     
                     
-                    if let empID = jsonDictionay["id"] as? Int
-                        
-                    {
-                        
-                        intern.employeeID=empID
-                        
-                    }
-                    
-                    if let empName = jsonDictionay["name"] as? String
-                        
-                    {
-                        
-                        intern.employeeName=empName
-                        
-                    }
-                    
-                    if let empAge = jsonDictionay["age"] as? Int
-                        
-                    {
-                        
-                        intern.employeeAge=empAge
-                        
-                    }
-                    
+                    intern.basicDetails(employeeDict: jsonDictionay, object: intern)
+
                     if let empSchool = jsonDictionay["schoolName"] as? String
                         
                     {
