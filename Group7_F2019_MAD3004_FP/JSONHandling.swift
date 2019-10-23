@@ -95,7 +95,6 @@ class JSONHandling
                 
                 // new object
                 
-                // checking type of vehicle and assign object
                 
                 // checking type of employee and apply condition to create different object
                 
@@ -155,18 +154,11 @@ class JSONHandling
                     if let vehicleDict = jsonDictionay["vehicle"] as? Dictionary<String,Any>
                         
                     {
-                        print("V FOUND")
                         ftime.vehicle = ftime.checkVehicle(vehicleDict: vehicleDict)!
                         
                     }
                         
-                    else {
-                        
-                        
-                        
-                        print("The employee has no vehicle registered")
-                        
-                    }
+                    
                     
                     customerDic.updateValue(ftime, forKey: ftime.employeeID!)
                     
@@ -242,13 +234,7 @@ class JSONHandling
                         
                     }
                         
-                    else {
-                        
-                        
-                        
-                        print("The employee has no vehicle registered")
-                        
-                    }
+                  
                     
                     customerDic.updateValue(fixedparttime, forKey: fixedparttime.employeeID!)
 
@@ -388,7 +374,7 @@ class JSONHandling
                         
                     {
                         
-                        intern.salary=empSalary
+                        intern.totalSalary=empSalary
                         
                     }
                     
@@ -428,11 +414,14 @@ class JSONHandling
             
         }
         
+       
         
         for i in customerDic.values
         {
             i.displayData()
+        
         }
+        
         
         
         
