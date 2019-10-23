@@ -330,6 +330,7 @@ class JSONHandling
                     }
                     
                     
+                    
                     customerDic.updateValue(commisiomnparttime, forKey: commisiomnparttime.employeeID!)
 
                     
@@ -399,14 +400,9 @@ class JSONHandling
                        intern.vehicle = intern.checkVehicle(vehicleDict: vehicleDict)!
                         
                     }
+                    
                         
-                    else {
-                        
-                        
-                        
-                        print("The employee has no vehicle registered")
-                        
-                    }
+                
                     
                     customerDic.updateValue(intern, forKey: intern.employeeID!)
 
@@ -417,11 +413,7 @@ class JSONHandling
                     
                 }
                     
-                else {
-                    
-                    print("Type of employee doesnot match ")
-                    
-                }
+              
                 
                 
                 
@@ -431,7 +423,6 @@ class JSONHandling
                 
                 
                 
-                print("*******************************************")
                 
             }
             
