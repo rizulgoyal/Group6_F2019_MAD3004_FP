@@ -40,6 +40,33 @@ class Employee : Vehicle
         
     }
     
+    func basicDetails(employeeDict: [String:Any],object : Employee)
+    {
+        if let empID = employeeDict["id"] as? Int
+            
+        {
+            
+            object.employeeID=empID
+            
+        }
+        
+        if let empName = employeeDict["name"] as? String
+            
+        {
+            
+            object.employeeName=empName
+            
+        }
+        
+        if let empAge = employeeDict["age"] as? Int
+            
+        {
+            
+            object.employeeAge=empAge
+            
+        }
+    }
+    
     func checkVehicle(vehicleDict: [String:Any]) -> Vehicle?
         
     {

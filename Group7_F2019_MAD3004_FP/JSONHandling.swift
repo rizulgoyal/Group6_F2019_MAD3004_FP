@@ -108,29 +108,7 @@ class JSONHandling
                     
                     ftime = FullTime()
                     
-                    if let empID = jsonDictionay["id"] as? Int
-                        
-                    {
-                        
-                        ftime.employeeID=empID
-                        
-                    }
-                    
-                    if let empName = jsonDictionay["name"] as? String
-                        
-                    {
-                        
-                        ftime.employeeName=empName
-                        
-                    }
-                    
-                    if let empAge = jsonDictionay["age"] as? Int
-                        
-                    {
-                        
-                        ftime.employeeAge=empAge
-                        
-                    }
+                    ftime.basicDetails(employeeDict: jsonDictionay, object: ftime)
                     
                     if let empSalary = jsonDictionay["salary"] as? Float
                         
