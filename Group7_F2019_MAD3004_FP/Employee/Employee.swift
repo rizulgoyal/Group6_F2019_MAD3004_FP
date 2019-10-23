@@ -186,12 +186,11 @@ class Employee : Vehicle
     
     override func displayData() {
         
+        print("***************************************")
         print("Employee ID : \(self.employeeID!)")
         print("Employee Name : \(self.employeeName!)")
         print("Employee Birth Year : \(birthYear)")
-        
-        vehicle.displayData()
-        
+       vehicle.displayData()
         
         
         
