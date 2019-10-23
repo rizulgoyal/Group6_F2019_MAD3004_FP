@@ -61,6 +61,7 @@ class JSONHandling
         }
         
         
+        var customerDic = [Int:Employee]()
         
         
         
@@ -168,6 +169,7 @@ class JSONHandling
                         
                     }
                     
+                    customerDic.updateValue(ftime, forKey: ftime.employeeID!)
                     
                     
                 }
@@ -249,6 +251,9 @@ class JSONHandling
                         print("The employee has no vehicle registered")
                         
                     }
+                    
+                    customerDic.updateValue(fixedparttime, forKey: fixedparttime.employeeID!)
+
                     
                     
                     
@@ -334,6 +339,9 @@ class JSONHandling
                         
                     }
                     
+                    customerDic.updateValue(commisiomnparttime, forKey: commisiomnparttime.employeeID!)
+
+                    
                     
                     
                     
@@ -409,6 +417,9 @@ class JSONHandling
                         print("The employee has no vehicle registered")
                         
                     }
+                    
+                    customerDic.updateValue(intern, forKey: intern.employeeID!)
+
                     
                     
                     
