@@ -155,7 +155,7 @@ class JSONHandling
                     if let vehicleDict = jsonDictionay["vehicle"] as? Dictionary<String,Any>
                         
                     {
-                        
+                        print("V FOUND")
                         ftime.vehicle = ftime.checkVehicle(vehicleDict: vehicleDict)!
                         
                     }

@@ -35,7 +35,7 @@ class CommisionBasedPartTime : PartTime
         print("    -   Comission : \(commisionPercentage!)")
         print("    -   Total Earnings : \(totalSalary.insertCurrency())")
         
-        super.vehicle.displayData()
+        //super.vehicle.displayData()
 
 
         

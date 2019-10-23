@@ -25,7 +25,7 @@ class FullTime: Employee {
                print("The Salary is : \(salary!.insertCurrency())")
                print("The Bonus is : \(bonus!.insertCurrency())")
                print("The Total Salary is : \(totalsalary.insertCurrency())")
-        super.vehicle.displayData()
+        //super.vehicle.displayData()
     }
    
 }

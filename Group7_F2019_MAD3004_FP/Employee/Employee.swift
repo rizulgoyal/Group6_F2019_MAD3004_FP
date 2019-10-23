@@ -17,7 +17,7 @@ class Employee : Vehicle
     var employeeName : String?
     var employeeAge : Int?
     var currentYear : Int = 2019
-    var vehicle = Vehicle()
+    var vehicle: Vehicle?
     
     
     
@@ -190,7 +190,13 @@ class Employee : Vehicle
         print("Employee ID : \(self.employeeID!)")
         print("Employee Name : \(self.employeeName!)")
         print("Employee Birth Year : \(birthYear)")
-       vehicle.displayData()
+       
+        if let v = vehicle
+        {
+            v.displayData()
+        }else{
+            print("No Ve")
+        }
         
         
         
