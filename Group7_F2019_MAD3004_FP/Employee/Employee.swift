@@ -40,10 +40,11 @@ class Employee : Vehicle
         
     }
     
-    func checkVehicle(vehicleDict: [String:Any])
+    func checkVehicle(vehicleDict: [String:Any]) -> Vehicle?
         
     {
         
+        var vehicle: Vehicle? = nil
         
         let typecheck = vehicleDict["type"] as? String
         
@@ -104,8 +105,7 @@ class Employee : Vehicle
                 
             }
             
-            car.displayData()
-            
+                    vehicle = car
         }
             
             
@@ -168,11 +168,11 @@ class Employee : Vehicle
                 
             }
             
-            motorcycle.displayData()
-            
+            vehicle = motorcycle
         }
             
-        else {
+        else if vehicle == nil
+        {
             
             
             
@@ -180,6 +180,7 @@ class Employee : Vehicle
             
         }
         
+    return vehicle
     }
     
     
@@ -188,6 +189,11 @@ class Employee : Vehicle
         print("Employee ID : \(self.employeeID!)")
         print("Employee Name : \(self.employeeName!)")
         print("Employee Birth Year : \(birthYear)")
+        
+        vehicle.displayData()
+        
+        
+        
         
         
         

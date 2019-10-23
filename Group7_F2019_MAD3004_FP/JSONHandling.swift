@@ -149,7 +149,6 @@ class JSONHandling
                         
                     }
                     
-                    ftime.displayData()
                     
                     
                     
@@ -157,7 +156,7 @@ class JSONHandling
                         
                     {
                         
-                        ftime.checkVehicle(vehicleDict: vehicleDict)
+                        ftime.vehicle = ftime.checkVehicle(vehicleDict: vehicleDict)!
                         
                     }
                         
@@ -234,13 +233,12 @@ class JSONHandling
                         
                     }
                     
-                    fixedparttime.displayData()
                     
                     if let vehicleDict = jsonDictionay["vehicle"] as? Dictionary<String,Any>
                         
                     {
                         
-                        fixedparttime.checkVehicle(vehicleDict: vehicleDict)
+                        fixedparttime.vehicle = fixedparttime.checkVehicle(vehicleDict: vehicleDict)!
                         
                     }
                         
@@ -321,23 +319,16 @@ class JSONHandling
                         
                     }
                     
-                    commisiomnparttime.displayData()
                     
                     if let vehicleDict = jsonDictionay["vehicle"] as? Dictionary<String,Any>
                         
                     {
                         
-                        commisiomnparttime.checkVehicle(vehicleDict: vehicleDict)
+                        commisiomnparttime.vehicle = commisiomnparttime.checkVehicle(vehicleDict: vehicleDict)!
+                        
                         
                     }
-                        
-                    else {
-                        
-                        
-                        
-                        print("The employee has no vehicle registered")
-                        
-                    }
+                    
                     
                     customerDic.updateValue(commisiomnparttime, forKey: commisiomnparttime.employeeID!)
 
@@ -400,13 +391,12 @@ class JSONHandling
                         
                     }
                     
-                    intern.displayData()
                     
                     if let vehicleDict = jsonDictionay["vehicle"] as? Dictionary<String,Any>
                         
                     {
                         
-                        intern.checkVehicle(vehicleDict: vehicleDict)
+                       intern.vehicle = intern.checkVehicle(vehicleDict: vehicleDict)!
                         
                     }
                         
@@ -445,6 +435,12 @@ class JSONHandling
                 
             }
             
+        }
+        
+        
+        for i in customerDic.values
+        {
+            i.displayData()
         }
         
         

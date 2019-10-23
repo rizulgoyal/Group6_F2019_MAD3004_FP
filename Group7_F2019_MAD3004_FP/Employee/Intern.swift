@@ -21,7 +21,8 @@ class Intern:Employee
         print("The Employee is Intern")
         print("The School Name is : \(schoolName!)")
         print("The Salary is : \(salary!.insertCurrency())")
-        
+        super.vehicle.displayData()
+
         //test
     }
     

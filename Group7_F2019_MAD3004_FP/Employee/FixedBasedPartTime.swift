@@ -33,6 +33,7 @@ class FixedBasedPartTime: PartTime
         print("    -   Hours Worked : \(hoursworked!.insertHours())")
         print("    -   Fixed Amount : \(fixedAmount!.insertDollar())")
         print("    -   Total Earnings : \(totalSalary.insertCurrency())")
+        super.vehicle.displayData()
 
         
     }
