@@ -20,11 +20,6 @@ class Vehicle : IPrintable  {
 
     
 
-//protocol method
-func displayData()  {
-print("The Make is : \(make!)")
-print("The plate no is : \(plate!)")
-
     //protocol method
      func displayData()  {
         
@@ -34,4 +29,5 @@ print("The plate no is : \(plate!)")
 
     }
 }
+
 

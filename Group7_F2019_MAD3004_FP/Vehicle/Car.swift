@@ -18,9 +18,6 @@ class  Car: Vehicle {
      override func displayData() {
         print("Employee has a Car")
         super.displayData()
-    //Method called of Vehicle Class
-        print("The model is : \(model!)")
-         print("Insurance is \(insurance!)")
 
         //Method called of Vehicle Class
         print("    -   Model : \(model!)")

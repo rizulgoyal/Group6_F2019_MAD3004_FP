@@ -17,7 +17,7 @@ class Employee : Vehicle
     var employeeName : String?
     var employeeAge : Int?
     var currentYear : Int = 2019
-    var vehicle: Vehicle()
+    var vehicle = Vehicle()
     
     
     var birthYear : Int{
