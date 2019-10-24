@@ -177,29 +177,7 @@ class JSONHandling
                     
                     commisiomnparttime.basicDetails(employeeDict: jsonDictionay, object: commisiomnparttime)
 
-                    if let empRate = jsonDictionay["rate"] as? Float
-                        
-                    {
-                        
-                        commisiomnparttime.rate=empRate
-                        
-                    }
-                    
-                    if let empHours = jsonDictionay["hoursWorked"] as? Int
-                        
-                    {
-                        
-                        commisiomnparttime.hoursworked=empHours
-                        
-                    }
-                    
-                    if let empCommision = jsonDictionay["commissionPercent"] as? Int
-                        
-                    {
-                        
-                        commisiomnparttime.commisionPercentage=empCommision
-                        
-                    }
+                    commisiomnparttime.commissionBasedPT(commisionDict: jsonDictionay, object: commisiomnparttime)
                     
                     
                     if let vehicleDict = jsonDictionay["vehicle"] as? Dictionary<String,Any>
