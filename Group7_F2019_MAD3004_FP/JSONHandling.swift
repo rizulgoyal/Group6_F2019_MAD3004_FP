@@ -108,12 +108,17 @@ class JSONHandling
                     
                     ftime = FullTime()
                     
+                    // calling function to add full time employee basic details
                     ftime.basicDetails(employeeDict: jsonDictionay, object: ftime)
+                    
+                    // calling function to add full time employee particular details
+
                     ftime.fullTimeDetails(fullTimeDict: jsonDictionay, object: ftime)
                     
                     
                     
-                    
+                    // calling function to add employee vehicle details
+
                     if let vehicleDict = jsonDictionay["vehicle"] as? Dictionary<String,Any>
                         
                     {
@@ -121,7 +126,7 @@ class JSONHandling
                         
                     }
                         
-                    
+                    // adding customer to the dictionary
                     
                     customerDic.updateValue(ftime, forKey: ftime.employeeID!)
                     
@@ -139,11 +144,17 @@ class JSONHandling
                     fixedparttime=FixedBasedPartTime()
                     
                     
-                    
+                    // calling function to add fixed part time employee basic details
+
                     fixedparttime.basicDetails(employeeDict: jsonDictionay, object: fixedparttime)
+                    
+                    // calling function to add fixed part time employee particular  details
+
                     fixedparttime.fixedTimeDetails(fixedBasedPTDict: jsonDictionay, object: fixedparttime)
                     
                     
+                    // calling function to add employee vehicle details
+ 
                     if let vehicleDict = jsonDictionay["vehicle"] as? Dictionary<String,Any>
                         
                     {
@@ -153,7 +164,8 @@ class JSONHandling
                     }
                         
                   
-                    
+                    // adding customer to the dictionary
+
                     customerDic.updateValue(fixedparttime, forKey: fixedparttime.employeeID!)
 
                     
@@ -253,7 +265,7 @@ class JSONHandling
         }
         
        
-        // loop through dictionary to print 
+        // loop through dictionary to print
         for i in customerDic.values
         {
             i.displayData()
