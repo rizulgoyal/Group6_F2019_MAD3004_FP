@@ -24,6 +24,37 @@ class CommisionBasedPartTime : PartTime
 //        super.init(employeeID: employeeID, employeeName: employeeName, employeeAge: employeeAge, rate: rate, hoursworked: hoursworked)
 //        self.commisionPercentage=commisionPercentage
 //    }
+    func commissionBasedPT(commisionDict : [String : Any],object : CommisionBasedPartTime) {
+       
+        if let empRate = commisionDict["rate"] as? Float
+            
+        {
+            
+            object.rate=empRate
+            
+        }
+        
+        if let empHours = commisionDict["hoursWorked"] as? Int
+            
+        {
+            
+            object.hoursworked=empHours
+            
+        }
+        
+        if let empCommision = commisionDict["commissionPercent"] as? Int
+            
+        {
+            
+            object.commisionPercentage=empCommision
+            
+        }
+    }
+    
+    
+    
+    
+    
     
     // function override to display data
 
