@@ -12,7 +12,7 @@ class Intern:Employee
 {
     
     var schoolName : String?
-    var salary : Float?
+    var totalSalary : Float?
     
     // function override to display data
 
@@ -20,8 +20,9 @@ class Intern:Employee
         super.displayData()
         print("The Employee is Intern")
         print("The School Name is : \(schoolName!)")
-        print("The Salary is : \(salary!.insertCurrency())")
-        
+        print("The Salary is : \(totalSalary!.insertCurrency())")
+        //super.vehicle.displayData()
+
         //test
     }
     

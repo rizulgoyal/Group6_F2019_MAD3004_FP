@@ -39,6 +39,9 @@ class CommisionBasedPartTime : PartTime
         print("         ")
         print( "\(hoursworked!.insertHours()) * \(rate!.insertCurrency()) * \(commisionPercentage!) / 100 = \(totalSalary.insertCurrency()))")
         print("     ")
+        
+        //super.vehicle.displayData()
+
 
         
     }
