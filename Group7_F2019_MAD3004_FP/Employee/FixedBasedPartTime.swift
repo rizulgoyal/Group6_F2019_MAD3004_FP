@@ -25,7 +25,7 @@ class FixedBasedPartTime: PartTime
 //    }
     
     
-    
+    // function to pass value from json
     func fixedTimeDetails(fixedBasedPTDict : [String :Any], object : FixedBasedPartTime) {
                
                 if let empRate = fixedBasedPTDict["rate"] as? Float

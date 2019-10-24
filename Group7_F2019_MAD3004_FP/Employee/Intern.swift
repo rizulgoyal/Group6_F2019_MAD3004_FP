@@ -15,6 +15,7 @@ class Intern:Employee
     var totalSalary : Float?
     
     
+    // function to pass value from json 
     func internDetails(internDict : [String:Any],object : Intern) {
          if let empSchool = internDict["schoolName"] as? String
                                

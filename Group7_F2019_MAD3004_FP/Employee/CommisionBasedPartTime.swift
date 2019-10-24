@@ -24,6 +24,9 @@ class CommisionBasedPartTime : PartTime
 //        super.init(employeeID: employeeID, employeeName: employeeName, employeeAge: employeeAge, rate: rate, hoursworked: hoursworked)
 //        self.commisionPercentage=commisionPercentage
 //    }
+    
+    
+    // function to pass value from json
     func commissionBasedPT(commisionDict : [String : Any],object : CommisionBasedPartTime) {
        
         if let empRate = commisionDict["rate"] as? Float

@@ -18,7 +18,7 @@ class FullTime: Employee {
         
     }
     
-    
+    // function to pass value from json
     func fullTimeDetails(fullTimeDict : [String:Any] ,object : FullTime )
        {
            if let empsalary = fullTimeDict["salary"] as? Float
