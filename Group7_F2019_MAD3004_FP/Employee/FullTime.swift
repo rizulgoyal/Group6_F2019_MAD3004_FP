@@ -32,7 +32,7 @@ class FullTime: Employee {
            }
     
     // function override to display data
-    override func displayData() {
+        func displayData() {
         super.displayData()
         print("The Employee is Full Time")
                print("The Salary is : \(salary!.insertCurrency())")
@@ -41,4 +41,5 @@ class FullTime: Employee {
         //super.vehicle.displayData()
     }
    
+}
 }
