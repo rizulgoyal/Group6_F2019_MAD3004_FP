@@ -18,6 +18,19 @@ class FullTime: Employee {
         
     }
     
+    
+    func fullTimeDetails(fullTimeDict : [String:Any] ,object : FullTime )
+       {
+           if let empsalary = fullTimeDict["salary"] as? Float
+           
+           {
+               object.salary = empsalary
+           }
+           if let empBonus = fullTimeDict["bonus"] as? Float
+           {
+               object.bonus = empBonus
+           }
+    
     // function override to display data
     override func displayData() {
         super.displayData()

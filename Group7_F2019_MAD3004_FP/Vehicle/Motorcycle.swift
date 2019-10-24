@@ -16,12 +16,11 @@ class Motorcycle: Vehicle {
 
  
 
-        func displayData() {
+    override func displayData() {
     print("Employee has a Motorcycle")
         super.displayData() //comment added
         print("    -   Model : \(model!)")
         print("    -   Insurance : \(insurance!)")
 
     }
-}
 }
