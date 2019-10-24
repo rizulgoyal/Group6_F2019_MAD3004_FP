@@ -30,9 +30,11 @@ class FullTime: Employee {
            {
                object.bonus = empBonus
            }
+        }
+    
     
     // function override to display data
-        func displayData() {
+    override func displayData() {
         super.displayData()
         print("The Employee is Full Time")
                print("The Salary is : \(salary!.insertCurrency())")
@@ -41,5 +43,5 @@ class FullTime: Employee {
         //super.vehicle.displayData()
     }
    
-}
+
 }
