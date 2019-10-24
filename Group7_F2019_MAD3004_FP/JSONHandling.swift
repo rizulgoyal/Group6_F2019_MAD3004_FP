@@ -109,22 +109,7 @@ class JSONHandling
                     ftime = FullTime()
                     
                     ftime.basicDetails(employeeDict: jsonDictionay, object: ftime)
-                    
-                    if let empSalary = jsonDictionay["salary"] as? Float
-                        
-                    {
-                        
-                        ftime.salary=empSalary
-                        
-                    }
-                    
-                    if let empbonus = jsonDictionay["bonus"] as? Float
-                        
-                    {
-                        
-                        ftime.bonus=empbonus
-                        
-                    }
+                    ftime.fullTimeDetails(fullTimeDict: jsonDictionay, object: ftime)
                     
                     
                     
