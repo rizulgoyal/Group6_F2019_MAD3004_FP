@@ -213,22 +213,8 @@ class JSONHandling
                     
                     
                     intern.basicDetails(employeeDict: jsonDictionay, object: intern)
-
-                    if let empSchool = jsonDictionay["schoolName"] as? String
-                        
-                    {
-                        
-                        intern.schoolName=empSchool
-                        
-                    }
-                    
-                    if let empSalary = jsonDictionay["salary"] as? Float
-                        
-                    {
-                        
-                        intern.totalSalary=empSalary
-                        
-                    }
+                    intern.internDetails(internDict: jsonDictionay, object: intern)
+                   
                     
                     
                     if let vehicleDict = jsonDictionay["vehicle"] as? Dictionary<String,Any>
