@@ -253,7 +253,7 @@ class JSONHandling
         }
         
        
-        
+        // loop through dictionary to print 
         for i in customerDic.values
         {
             i.displayData()
