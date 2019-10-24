@@ -141,30 +141,7 @@ class JSONHandling
                     
                     
                     fixedparttime.basicDetails(employeeDict: jsonDictionay, object: fixedparttime)
-                    
-                    if let empRate = jsonDictionay["rate"] as? Float
-                        
-                    {
-                        
-                        fixedparttime.rate=empRate
-                        
-                    }
-                    
-                    if let empHours = jsonDictionay["hoursWorked"] as? Int
-                        
-                    {
-                        
-                        fixedparttime.hoursworked=empHours
-                        
-                    }
-                    
-                    if let empFixedAmount = jsonDictionay["hoursWorked"] as? Int
-                        
-                    {
-                        
-                        fixedparttime.fixedAmount=empFixedAmount
-                        
-                    }
+                    fixedparttime.fixedTimeDetails(fixedBasedPTDict: jsonDictionay, object: fixedparttime)
                     
                     
                     if let vehicleDict = jsonDictionay["vehicle"] as? Dictionary<String,Any>
