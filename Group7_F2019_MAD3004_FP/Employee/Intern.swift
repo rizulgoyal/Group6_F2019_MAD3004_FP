@@ -14,6 +14,25 @@ class Intern:Employee
     var schoolName : String?
     var totalSalary : Float?
     
+    
+    func internDetails(internDict : [String:Any],object : Intern) {
+         if let empSchool = internDict["schoolName"] as? String
+                               
+                           {
+                               
+                               object.schoolName=empSchool
+                               
+                           }
+                           
+                           if let empSalary = internDict["salary"] as? Float
+                               
+                           {
+                               
+                               object.totalSalary=empSalary
+                               
+                           }
+    }
+    
     // function override to display data
 
     override func displayData() {
@@ -22,8 +41,6 @@ class Intern:Employee
         print("The School Name is : \(schoolName!)")
         print("The Salary is : \(totalSalary!.insertCurrency())")
         //super.vehicle.displayData()
-
-        //test
     }
     
 }

@@ -25,6 +25,34 @@ class FixedBasedPartTime: PartTime
 //    }
     
     
+    
+    func fixedTimeDetails(fixedBasedPTDict : [String :Any], object : FixedBasedPartTime) {
+               
+                if let empRate = fixedBasedPTDict["rate"] as? Float
+                        {
+                               
+                            object.rate = empRate
+                               
+                           }
+                           
+                           if let empHours = fixedBasedPTDict["hoursWorked"] as? Int
+                               
+                           {
+                               
+                            object.hoursworked = empHours
+                               
+                           }
+                           
+                           if let empFixedAmount = fixedBasedPTDict["hoursWorked"] as? Int
+                               
+                           {
+                               
+                               object.fixedAmount = empFixedAmount
+                               
+                           }
+    }
+    
+    
     // function override to display data
     override func displayData() {
         super.displayData()

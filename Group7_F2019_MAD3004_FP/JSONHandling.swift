@@ -109,22 +109,7 @@ class JSONHandling
                     ftime = FullTime()
                     
                     ftime.basicDetails(employeeDict: jsonDictionay, object: ftime)
-                    
-                    if let empSalary = jsonDictionay["salary"] as? Float
-                        
-                    {
-                        
-                        ftime.salary=empSalary
-                        
-                    }
-                    
-                    if let empbonus = jsonDictionay["bonus"] as? Float
-                        
-                    {
-                        
-                        ftime.bonus=empbonus
-                        
-                    }
+                    ftime.fullTimeDetails(fullTimeDict: jsonDictionay, object: ftime)
                     
                     
                     
@@ -156,30 +141,7 @@ class JSONHandling
                     
                     
                     fixedparttime.basicDetails(employeeDict: jsonDictionay, object: fixedparttime)
-                    
-                    if let empRate = jsonDictionay["rate"] as? Float
-                        
-                    {
-                        
-                        fixedparttime.rate=empRate
-                        
-                    }
-                    
-                    if let empHours = jsonDictionay["hoursWorked"] as? Int
-                        
-                    {
-                        
-                        fixedparttime.hoursworked=empHours
-                        
-                    }
-                    
-                    if let empFixedAmount = jsonDictionay["hoursWorked"] as? Int
-                        
-                    {
-                        
-                        fixedparttime.fixedAmount=empFixedAmount
-                        
-                    }
+                    fixedparttime.fixedTimeDetails(fixedBasedPTDict: jsonDictionay, object: fixedparttime)
                     
                     
                     if let vehicleDict = jsonDictionay["vehicle"] as? Dictionary<String,Any>
@@ -215,29 +177,7 @@ class JSONHandling
                     
                     commisiomnparttime.basicDetails(employeeDict: jsonDictionay, object: commisiomnparttime)
 
-                    if let empRate = jsonDictionay["rate"] as? Float
-                        
-                    {
-                        
-                        commisiomnparttime.rate=empRate
-                        
-                    }
-                    
-                    if let empHours = jsonDictionay["hoursWorked"] as? Int
-                        
-                    {
-                        
-                        commisiomnparttime.hoursworked=empHours
-                        
-                    }
-                    
-                    if let empCommision = jsonDictionay["commissionPercent"] as? Int
-                        
-                    {
-                        
-                        commisiomnparttime.commisionPercentage=empCommision
-                        
-                    }
+                    commisiomnparttime.commissionBasedPT(commisionDict: jsonDictionay, object: commisiomnparttime)
                     
                     
                     if let vehicleDict = jsonDictionay["vehicle"] as? Dictionary<String,Any>
@@ -273,22 +213,8 @@ class JSONHandling
                     
                     
                     intern.basicDetails(employeeDict: jsonDictionay, object: intern)
-
-                    if let empSchool = jsonDictionay["schoolName"] as? String
-                        
-                    {
-                        
-                        intern.schoolName=empSchool
-                        
-                    }
-                    
-                    if let empSalary = jsonDictionay["salary"] as? Float
-                        
-                    {
-                        
-                        intern.totalSalary=empSalary
-                        
-                    }
+                    intern.internDetails(internDict: jsonDictionay, object: intern)
+                   
                     
                     
                     if let vehicleDict = jsonDictionay["vehicle"] as? Dictionary<String,Any>
