@@ -186,11 +186,18 @@ class JSONHandling
                     commisiomnparttime=CommisionBasedPartTime()
                     
                     
-                    
-                    commisiomnparttime.basicDetails(employeeDict: jsonDictionay, object: commisiomnparttime)
+                    // calling function to add commision part time employee basic details
 
+                    commisiomnparttime.basicDetails(employeeDict: jsonDictionay, object: commisiomnparttime)
+                    
+                    // calling function to add commision part time employee particular details
+
+                    
                     commisiomnparttime.commissionBasedPT(commisionDict: jsonDictionay, object: commisiomnparttime)
                     
+                    
+                    // calling function to add employee vehicle details
+
                     
                     if let vehicleDict = jsonDictionay["vehicle"] as? Dictionary<String,Any>
                         
@@ -201,7 +208,8 @@ class JSONHandling
                         
                     }
                     
-                    
+                    // adding customer to the dictionary
+
                     
                     customerDic.updateValue(commisiomnparttime, forKey: commisiomnparttime.employeeID!)
 
@@ -223,12 +231,17 @@ class JSONHandling
                     intern=Intern()
                     
                     
-                    
+                    // calling function to add intern part time employee basic details
+
                     intern.basicDetails(employeeDict: jsonDictionay, object: intern)
+                    
+                    // calling function to add intern part time employee particular  details
+
                     intern.internDetails(internDict: jsonDictionay, object: intern)
                    
                     
-                    
+                    // calling function to add employee vehicle details
+
                     if let vehicleDict = jsonDictionay["vehicle"] as? Dictionary<String,Any>
                         
                     {
@@ -237,7 +250,8 @@ class JSONHandling
                         
                     }
                     
-                        
+                    // adding customer to the dictionary
+
                 
                     
                     customerDic.updateValue(intern, forKey: intern.employeeID!)
